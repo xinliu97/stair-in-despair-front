@@ -1,0 +1,19 @@
+.game-layout {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.deck, .play-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.back-face {
+    background: #000;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

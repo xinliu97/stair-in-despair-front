@@ -7,6 +7,14 @@
   pointer-events: none;
 }
 
+.card-container {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center cards horizontally */
+  padding: 20px; /* Padding around the cards */
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
