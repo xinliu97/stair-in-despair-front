@@ -26,9 +26,11 @@ const PlayScreen = ({ users, userHandCards, deck }) => {
 
             {/* User's Hand-card Zone */}
             <div className="hand-card-zone">
-                {userHandCards.map((card, index) => (
-                    <Card key={index} value={card.value} suit={card.suit} cardFace={card.cardFace} />
-                ))}
+                <div className="hand-cards">
+                    {userHandCards.map((card, index) => (
+                        <Card key={index} value={card.value} suit={card.suit} cardFace={card.cardFace} />
+                    ))}
+                </div>
             </div>
 
 

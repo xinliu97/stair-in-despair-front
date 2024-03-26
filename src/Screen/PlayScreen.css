@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-size: cover;
+    /* 设置背景位置为水平居中、垂直顶部 */
+    background: url("../../public/pokerbgbig.svg") center top;
+
 }
 
 .top-zone {
@@ -18,14 +22,35 @@
     justify-items: center;
     align-items: center;
     flex: 7;
+
+
 }
 
 .hand-card-zone {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; /* Adjust based on your layout */
     flex: 3;
+    position: relative;
 }
+
+.hand-cards {
+    display: grid;
+    grid: repeat(1, 8em) / repeat(6,2em);
+    position: relative;
+}
+
+.hand-cards:first-child {
+
+    margin-left: 0; /* 第一张卡片不需要左边距 */
+}
+
+/* 根据卡片在容器中的顺序增加z-index */
+.hand-cards:nth-child(1) { z-index: 1; }
+.hand-cards:nth-child(2) { z-index: 2; }
+.hand-cards:nth-child(3) { z-index: 3; }
+.hand-cards:nth-child(4) { z-index: 4; }
+.hand-cards:nth-child(5) { z-index: 5; }
+.hand-cards:nth-child(6) { z-index: 6; }
 
 .footer {
     padding: 20px;

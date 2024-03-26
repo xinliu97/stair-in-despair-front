@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.demo{
+    width: 10rem;
+    height: 4rem;
+    margin: 0.4rem auto 0;
+    background-color: skyblue;
+
+
+}
+
+.bold-center-text{
+    font-weight: bold;
+    text-align: center;
+}
+
+.content{
+    background-color: white;
+    padding: 0.8rem;
+}
+
+.password {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    flex: auto;
+}
+.eye {
+    flex: none;
+    margin-left: 0.213rem;
+    padding: 0.107rem;
+    cursor: pointer;
+    svg {
+        display: block;
+        font-size: var(--adm-font-size-7);
+    }
+}
+
+.login-method {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1.067rem;
+    gap: 0.533rem;
+    fontSize: 0.64rem;
+
+
+}
+
+.privacy {
+    padding: 1.067rem;
+}

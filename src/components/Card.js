@@ -6,14 +6,16 @@ const suitSymbols = {
     diamonds: '♦',
     clubs: '♣',
     spades: '♠',
+    undefined: ''
 };
 
 
 
 const Card = ({ value, suit, cardFace = 'front', className = '' }) => {
-    const color = ['hearts', 'diamonds'].includes(suit) ? 'text-red-500' : 'text-black'; // TailwindCSS classes for color
-    //test the color
-    console.log(color);
+    // black or red color
+    const color = (['hearts', 'diamonds'].includes(suit)||value === "♔") ? 'red' : 'black';
+    // test the color
+
 
     if(cardFace === 'back') {
         return (
@@ -23,15 +25,15 @@ const Card = ({ value, suit, cardFace = 'front', className = '' }) => {
             </div>
         );
     } else {
-    return (
-        <div className={`card ${color} ${className}`}>
-            <div className="value">{value}</div>
-            <div className="suit">{suitSymbols[suit]}</div>
-            <div>{cardFace} </div>
-        </div>
-    );
+        return (
+            <div className={`card ${className}`} style={{ color: color }}>
+                <div className="value">{value}</div>
+                <div className="suit">{suitSymbols[suit]}</div>
+            </div>
+        );
     }
 };
+
 
 export default Card;
 
