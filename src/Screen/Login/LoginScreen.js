@@ -1,4 +1,4 @@
-import {Button, Divider, Input} from 'antd-mobile'
+import {AutoCenter, Button, Divider, Input} from 'antd-mobile'
 import './LoginScreen.css'
 
 import React, {Component, useState} from 'react';
@@ -47,7 +47,7 @@ class LoginScreen extends Component {
                     <Divider/>
                     <Button block color='primary' size='large'>验证登录</Button>
                 </div>
-
+                <AutoCenter className="register-text">没有账号，<a href="/register">现在注册</a> </AutoCenter>
                 <div className="footer">
                     <Divider>其它登录方式</Divider>
                     <div className="login-method">

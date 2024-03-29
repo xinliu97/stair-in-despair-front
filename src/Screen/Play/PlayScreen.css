@@ -4,7 +4,7 @@
     height: 100vh;
     background-size: cover;
     /* 设置背景位置为水平居中、垂直顶部 */
-    background: url("../../public/pokerbgbig.svg") center top;
+    background: url("../../../public/pokerbgbig.svg") center top;
 
 }
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import './PlayScreen.css';
-import Card from "../components/Card";
-import GameFooter from "../components/GameFooter"; // Import CSS for styling
+import Card from "../../components/Card";
+import GameFooter from "../../components/GameFooter"; // Import CSS for styling
 
-const PlayScreen = ({ users, userHandCards, deck }) => {
+const PlayScreen = ({ users, userHandCards }) => {
     // Assuming `users` is an array of user objects, `userHandCards` is an array of cards for the current user, and `deck` represents the game deck
 
     return (
