@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavBar,Button,Input,Divider} from "antd-mobile";
+import {NavBar, Button, Input, Divider, Form} from "antd-mobile";
 import { EyeInvisibleOutline, EyeOutline } from 'antd-mobile-icons'
 import {TikTokOutlined, WechatOutlined, WeiboOutlined} from "@ant-design/icons";
 import './RegisterScreen.css';
@@ -43,17 +43,26 @@ class RegisterScreen extends Component {
                         <span className="bold-center-text">注册</span>
                     </NavBar>
                 </div>
-                <div className="content">
-                    <Input placeholder='请输入您的昵称' clearable/>
-                    <Divider/>
+                <Form className="content">
+                    <Form.Item
+                        name="username"
+                        rules={[{ required: true, message: '必填' }]}
+                    >
+                        <Input placeholder='请输入您的昵称' clearable/>
+                    </Form.Item>
+                    <Form.Item name="email">
                     <Input placeholder='请输入您的邮箱(可选)' clearable/>
-                    <Divider/>
+                    </Form.Item>
+                    <Form.Item name="phone_number">
                     <Input placeholder='请输入手机号码(登录凭证)' clearable/>
-                    <Divider/>
+                    </Form.Item>
+                    <Form.Item name="password">
                     <Passowrd/>
-                    <Divider/>
+                    </Form.Item>
+                    <Form.Item>
                     <Button block color='primary' size='large' >注册</Button>
-                </div>
+                    </Form.Item>
+                </Form>
                 <div className="footer">
                     <Divider>其它登录方式</Divider>
                     <div className="login-method">

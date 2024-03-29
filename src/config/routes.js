@@ -1,6 +1,7 @@
 import LoginScreen  from "../Screen/Login/LoginScreen";
 import RegisterScreen from "../Screen/Register/RegisterScreen";
 import {createBrowserRouter} from "react-router-dom";
+import Test from "../Screen/Test";
 
 const routes =  createBrowserRouter([
         {
@@ -17,7 +18,7 @@ const routes =  createBrowserRouter([
         },
         {
             path: "/about",
-            element: <div>About</div>,
+            element: <Test />,
         },
         {
             path: "/privacy",

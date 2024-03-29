@@ -1,4 +1,3 @@
-import './utils/rem';
 
 
 function App() {

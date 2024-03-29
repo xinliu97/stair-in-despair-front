@@ -18,6 +18,7 @@
 .content{
     background-color: white;
     padding: 0.8rem;
+    border-top: 0;
 }
 
 .password {
