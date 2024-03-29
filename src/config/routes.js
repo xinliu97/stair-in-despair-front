@@ -1,4 +1,5 @@
 import LoginScreen  from "../Screen/Login/LoginScreen";
+import RegisterScreen from "../Screen/Register/RegisterScreen";
 import {createBrowserRouter} from "react-router-dom";
 import APP from "../App";
 
@@ -10,6 +11,14 @@ const routes =  createBrowserRouter([
         {
             path: "/login",
             element: <LoginScreen />,
+        },
+        {
+            path: "/register",
+            element: <RegisterScreen />,
+        },
+        {
+            path: "/about",
+            element: <div>About</div>,
         },
         {
             path: "/privacy",
