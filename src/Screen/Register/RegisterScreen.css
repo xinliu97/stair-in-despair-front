@@ -26,6 +26,10 @@
     align-items: center;
 }
 
+.adm-form .adm-list.adm-list {
+    --border-top: none;
+}
+
 .input {
     flex: auto;
 }

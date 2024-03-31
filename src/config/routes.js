@@ -2,6 +2,7 @@ import LoginScreen  from "../Screen/Login/LoginScreen";
 import RegisterScreen from "../Screen/Register/RegisterScreen";
 import {createBrowserRouter} from "react-router-dom";
 import Test from "../Screen/Test/Test";
+import  "../utils/rem.js";
 
 const routes =  createBrowserRouter([
         {

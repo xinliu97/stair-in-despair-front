@@ -15,6 +15,10 @@
     font-size: 1rem;
 }
 
+.adm-form .adm-list.adm-list {
+    --border-top: none;
+}
+
 .content{
     background-color: white;
     padding: 0.8rem;
